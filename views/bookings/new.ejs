@@ -1,0 +1,29 @@
+<%- include('../partials/header') %>
+    <form action="/bookings" method="POST">
+        <div>
+            <p>From</p>
+            <input type="date" name="booking[from]" placeholder="dd/mm/yyyy">
+        </div>
+        <div>
+            <p>To</p>
+            <input type="date" name="booking[to]" placeholder="dd/mm/yyyy">
+        </div>
+        <div>
+            <p>Adults</p>
+            <input type="number" name="booking[adults]" placeholder="0">
+        </div>
+        <div>
+            <p>Children</p>
+            <input type="number" name="booking[children]" placeholder="0">
+        </div>
+        <div>
+            <p>No. Of Rooms</p>
+            <input type="number" name="booking[rooms]" placeholder="0">
+        </div>
+        <div>
+            <p>Room</p>
+            <input type="text" name="booking[roomtype]" placeholder="Eg. Master Room">
+        </div>
+        <button type="submit">Book Now</button>
+    </form>
+<%- include('../partials/footer') %>

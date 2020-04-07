@@ -1,0 +1,19 @@
+<%- include('../partials/header') %>
+<div>
+    <p>From: <%= booking.from %></p>
+    <p>To: <%= booking.to %></p>
+    <p>Adults: <%= booking.adults %></p>
+    <p>Children: <%= booking.children %></p>
+    <p>Rooms: <%= booking.rooms %></p>
+    <p>Room: <%= booking.roomtype %></p>
+</div>
+<div>
+    <form action="/bookings/<%= booking._id %>/edit">
+        <button type="">Edit</button>
+    </form>
+    <form action="/bookings/<%= booking._id %>/?_method=DELETE", method="POST">
+        <button type="">Delete</button>
+    </form>
+</div>
+
+<%- include('../partials/footer') %>
